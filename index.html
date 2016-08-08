@@ -45,6 +45,17 @@
 			.disclaimer ul, .disclaimer li {
 				padding:0; margin:0;
 			}
+			.link-print {
+				display: none;
+			}
+			@media print {
+				.link-print {
+					display: initial;
+				}
+				.link-web {
+					text-decoration: none;
+				}
+			}
 		</style>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 	</head>
@@ -109,22 +120,25 @@
 				<h3>You can find/contact me at</h3>
 				<ul>
 					<li>
-						<a href="https://github.com/julianzimmermann" target="_blank">GitHub</a>
+						<a class="link-web" href="https://www.github.com/julianzimmermann" target="_blank">GitHub</a><span class="link-print">: www.github.com/julianzimmermann</span>
 					</li>
 					<li>
-						<a href="https://www.facebook.com/jzimmermann" target="_blank">Facebook</a>
+						<a class="link-web" href="https://www.facebook.com/jzimmermann" target="_blank">Facebook</a><span class="link-print">: www.facebook.com/jzimmermann</span>
 					</li>
 					<li>
-						<a href="https://twitter.com/yeahbert" target="_blank">Twitter</a>
+						<a class="link-web" href="https://www.linkedin.com/in/julianzimmermann" target="_blank">LinkedIn</a><span class="link-print">: https://www.linkedin.com/in/julianzimmermann</span>
 					</li>
 					<li>
-						<a href="https://www.goodreads.com/user/show/7305590-yeahbert target="_blank"">Goodreads</a>
+						<a class="link-web" href="https://www.twitter.com/yeahbert" target="_blank">Twitter</a><span class="link-print">: www.twitter.com/yeahbert</span>
 					</li>
 					<li>
-						<a href="https://steamcommunity.com/id/yeahbert target="_blank"">Steam</a>
+						<a class="link-web" href="https://www.goodreads.com/user/show/7305590-yeahbert" target="_blank">Goodreads</a><span class="link-print">: www.goodreads.com/user/show/7305590-yeahbert</span>
 					</li>
 					<li>
-						<a href="mailto:julianzimmermann@gmail.com" target="_blank">Email</a>
+						<a class="link-web" href="https://www.steamcommunity.com/id/yeahbert" target="_blank">Steam</a><span class="link-print">: www.steamcommunity.com/id/yeahbert</span>
+					</li>
+					<li>
+						<a class="link-web" href="mailto:julianzimmermann@gmail.com" target="_blank">Email/Hangouts</a><span class="link-print">: julianzimmermann@gmail.com</span>
 					</li>
 				</ul>
 			</div>
