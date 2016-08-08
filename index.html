@@ -39,12 +39,6 @@
 			.content {
 				padding-left: 20px;
 			}
-			.disclaimer {
-				font-size: 80%;
-			}
-			.disclaimer ul, .disclaimer li {
-				padding:0; margin:0;
-			}
 			.link-print {
 				display: none;
 			}
@@ -54,6 +48,21 @@
 				}
 				.link-web {
 					text-decoration: none;
+				}
+			}
+			@media only screen 
+			and (max-device-width: 568px)
+			and (-webkit-min-device-pixel-ratio: 2)
+			and (orientation: portrait) {
+				body {
+					margin: 10px auto;
+					max-width: 100%;
+				}	
+				li {
+					display: inline;
+				}
+				li+li:before {
+					content: '| ';
 				}
 			}
 		</style>
@@ -86,8 +95,6 @@
 					<li>try to automate my home with OpenHAB and Z-Wave</li>
 					<li>joined Team Mystic</li>
 				</ul>
-			</div>
-			<div class="experience">
 				<h3>I have worked as a</h3>
 				<ul>
 					<li>Software Engineer</li>
@@ -104,8 +111,6 @@
 					<li>MySQL</li>
 					<li>MongoDB</li>
 				</ul>
-			</div>
-			<div class="experience">
 				<h3>but I have also experience in</h3>
 				<ul>
 					<li>Python</li>
