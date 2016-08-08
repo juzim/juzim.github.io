@@ -58,11 +58,20 @@
 					margin: 10px auto;
 					max-width: 100%;
 				}	
+				.list {
+					overflow: hidden;
+					margin: 1em;
+				}
+				ul {
+					padding: 0;
+					margin-left: -10px;
+				}
 				li {
 					display: inline;
+					white-space: nowrap;
 				}
-				li+li:before {
-					content: '| ';
+				li:before {
+					content: ' | ';
 				}
 			}
 		</style>
@@ -76,81 +85,89 @@
 		<div class="content">
 			<div class="about-me">
 				<h3>I'm a</h3>
-				<ul>
-					<li>Software Engineer</li>
-					<li>Freelancer</li>
-					<li>Pluviophile</li>
-				</ul>
+				<div class="list">
+					<ul>
+						<li>Software Engineer</li>
+						<li>Freelancer</li>
+						<li>Pluviophile</li>
+					</ul>
+				</div>
 				<h3>and I</h3>
-				<ul>
-					<li>live in Regensburg</li>
-					<li>have a
-						<script type="text/javascript">
-							document.write(Math.floor((new Date() - new Date(2015, 7)) / (1000*60*60*24*365)) + ' year old ');
-						</script>
-						son
-					</li>
-					<li>studied political science</li>
-					<li>sometimes play HOTS</li>
-					<li>try to automate my home with OpenHAB and Z-Wave</li>
-					<li>joined Team Mystic</li>
-				</ul>
+				<div class="list">
+					<ul>
+						<li>live in Regensburg</li>
+						<li>have a
+							<script type="text/javascript">
+								document.write(Math.floor((new Date() - new Date(2015, 7)) / (1000*60*60*24*365)) + ' year old ');
+							</script>
+							son
+						</li>
+						<li>studied political science</li>
+						<li>sometimes play HOTS</li>
+						<li>try to automate my home with OpenHAB and Z-Wave</li>
+						<li>joined Team Mystic</li>
+					</ul>
+				</div>
 				<h3>I have worked as a</h3>
-				<ul>
-					<li>Software Engineer</li>
-					<li>Web Developer</li>
-					<li>Social Media Consultant</li>
-					<li>Writer for an internet policy and digital society blog</li>
-				</ul>
+				<div class="list">
+					<ul>
+						<li>Software Engineer</li>
+						<li>Web Developer</li>
+						<li>Social Media Consultant</li>
+						<li>Writer for an internet policy and digital society blog</li>
+					</ul>
+				</div>
 				<h3>Most of the time I'm using</h3>
-				<ul>
-					<li>PHP</li>
-					<li>JavaScript</li>
-					<li>CSS/SASS</li>
-					<li>HTML</li>
-					<li>MySQL</li>
-					<li>MongoDB</li>
-				</ul>
+				<div class="list">
+					<ul>
+						<li>PHP</li>
+						<li>JavaScript</li>
+						<li>CSS/SASS</li>
+						<li>HTML</li>
+						<li>MySQL</li>
+						<li>MongoDB</li>
+					</ul>
+				</div>
 				<h3>but I have also experience in</h3>
-				<ul>
-					<li>Python</li>
-					<li>Node.js</li>
-					<li>React/Redux</li>
-					<li>Symfony</li>
-					<li>Silex</li>
-					<li>Twig/Mustache</li>
-				</ul>
+				<div class="list">
+					<ul>
+						<li>Python</li>
+						<li>Node.js</li>
+						<li>React/Redux</li>
+						<li>Symfony</li>
+						<li>Silex</li>
+						<li>Twig/Mustache</li>
+					</ul>
+				</div>
 			</div>
 			<div class="contact">
 				<h3>You can find/contact me at</h3>
-				<ul>
-					<li>
-						<a class="link-web" href="https://www.github.com/julianzimmermann" target="_blank">GitHub</a><span class="link-print">: www.github.com/julianzimmermann</span>
-					</li>
-					<li>
-						<a class="link-web" href="https://www.facebook.com/jzimmermann" target="_blank">Facebook</a><span class="link-print">: www.facebook.com/jzimmermann</span>
-					</li>
-					<li>
-						<a class="link-web" href="https://www.linkedin.com/in/julianzimmermann" target="_blank">LinkedIn</a><span class="link-print">: https://www.linkedin.com/in/julianzimmermann</span>
-					</li>
-					<li>
-						<a class="link-web" href="https://www.twitter.com/yeahbert" target="_blank">Twitter</a><span class="link-print">: www.twitter.com/yeahbert</span>
-					</li>
-					<li>
-						<a class="link-web" href="https://www.goodreads.com/user/show/7305590-yeahbert" target="_blank">Goodreads</a><span class="link-print">: www.goodreads.com/user/show/7305590-yeahbert</span>
-					</li>
-					<li>
-						<a class="link-web" href="https://www.steamcommunity.com/id/yeahbert" target="_blank">Steam</a><span class="link-print">: www.steamcommunity.com/id/yeahbert</span>
-					</li>
-					<li>
-						<a class="link-web" href="mailto:julianzimmermann@gmail.com" target="_blank">Email/Hangouts</a><span class="link-print">: julianzimmermann@gmail.com</span>
-					</li>
-				</ul>
+				<div class="list">
+					<ul>
+						<li>
+							<a class="link-web" href="https://www.github.com/julianzimmermann" target="_blank">GitHub</a><span class="link-print">: www.github.com/julianzimmermann</span>
+						</li>
+						<li>
+							<a class="link-web" href="https://www.facebook.com/jzimmermann" target="_blank">Facebook</a><span class="link-print">: www.facebook.com/jzimmermann</span>
+						</li>
+						<li>
+							<a class="link-web" href="https://www.linkedin.com/in/julianzimmermann" target="_blank">LinkedIn</a><span class="link-print">: https://www.linkedin.com/in/julianzimmermann</span>
+						</li>
+						<li>
+							<a class="link-web" href="https://www.twitter.com/yeahbert" target="_blank">Twitter</a><span class="link-print">: www.twitter.com/yeahbert</span>
+						</li>
+						<li>
+							<a class="link-web" href="https://www.goodreads.com/user/show/7305590-yeahbert" target="_blank">Goodreads</a><span class="link-print">: www.goodreads.com/user/show/7305590-yeahbert</span>
+						</li>
+						<li>
+							<a class="link-web" href="https://www.steamcommunity.com/id/yeahbert" target="_blank">Steam</a><span class="link-print">: www.steamcommunity.com/id/yeahbert</span>
+						</li>
+						<li>
+							<a class="link-web" href="mailto:julianzimmermann@gmail.com" target="_blank">Email/Hangouts</a><span class="link-print">: julianzimmermann@gmail.com</span>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="disclaimer">
-			<ul>
-			</ul>
 		</div>
 	</body>
 </html>
