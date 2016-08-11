@@ -15,10 +15,16 @@
 				line-height:1.2;
 				margin-bottom: 10px;
 			}
+			h2 {
+				font-size: 17px;
+				font-weight: bold;
+				line-height: 1.6;
+				margin: 0;
+			}
 			h1 {
 				margin-top: 0;
 			}
-			h2 {
+			h4 {
 				margin-bottom: 5px;
 			}
 			h3 {
@@ -50,14 +56,14 @@
 					text-decoration: none;
 				}
 			}
-			@media only screen 
+			@media only screen
 			and (max-device-width: 568px)
 			and (-webkit-min-device-pixel-ratio: 2)
 			and (orientation: portrait) {
 				body {
 					margin: 10px auto;
 					max-width: 100%;
-				}	
+				}
 				.list {
 					overflow: hidden;
 					margin: 1em;
@@ -75,11 +81,29 @@
 				}
 			}
 		</style>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-82323377-1', 'auto');
+		  ga('send', 'pageview');
+
+			<script>
+
+		var trackOutboundLink = function(url) {
+		   ga('send', 'event', 'outbound', 'click', url, {
+		     'transport': 'beacon',
+		     'hitCallback': function(){document.location = url;}
+		   });
+		}
+		</script>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 	</head>
 	<body>
 		<div class="header">
-			<h2>Hi, my name is</h2>
+			<h4>Hi, my name is</h4>
 			<h1>Julian Zimmermann</h1>
 		</div>
 		<div class="content">
@@ -87,15 +111,15 @@
 				<h3>I'm a</h3>
 				<div class="list">
 					<ul>
-						<li>Software Engineer</li>
-						<li>Freelancer</li>
+						<li><h2>Software Engineer</h2></li>
+						<li><h2>Freelancer</h2></li>
 						<li>Pluviophile</li>
 					</ul>
 				</div>
 				<h3>and I</h3>
 				<div class="list">
 					<ul>
-						<li>live in Regensburg</li>
+						<li><h2>live in Regensburg</h2></li>
 						<li>have a
 							<script type="text/javascript">
 								document.write(Math.floor((new Date() - new Date(2015, 7)) / (1000*60*60*24*365)) + ' year old ');
@@ -111,8 +135,8 @@
 				<h3>I have worked as a</h3>
 				<div class="list">
 					<ul>
-						<li>Software Engineer</li>
-						<li>Web Developer</li>
+						<li><h2>Software Engineer</h2></li>
+						<li><h2>Web Developer</h2></li>
 						<li>Social Media Consultant</li>
 						<li>Writer for an internet policy and digital society blog</li>
 					</ul>
@@ -120,23 +144,23 @@
 				<h3>Most of the time I'm using</h3>
 				<div class="list">
 					<ul>
-						<li>PHP</li>
-						<li>JavaScript</li>
-						<li>CSS/SASS</li>
-						<li>HTML</li>
-						<li>MySQL</li>
-						<li>MongoDB</li>
+						<li><h2>PHP</h2></li>
+						<li><h2>JavaScript</h2></li>
+						<li><h2>CSS/SASS</h2></li>
+						<li><h2>HTML</h2></li>
+						<li><h2>MySQL</h2></li>
+						<li><h2>MongoDB</h2></li>
 					</ul>
 				</div>
 				<h3>but I have also experience in</h3>
 				<div class="list">
 					<ul>
-						<li>Python</li>
-						<li>Node.js</li>
-						<li>React/Redux</li>
-						<li>Symfony</li>
-						<li>Silex</li>
-						<li>Twig/Mustache</li>
+						<li><h2>Python</h2></li>
+						<li><h2>Node.js</h2></li>
+						<li><h2>React/Redux</h2></li>
+						<li><h2>Symfony</h2></li>
+						<li><h2>Silex</h2></li>
+						<li><h2>Twig/Mustache</h2></li>
 					</ul>
 				</div>
 			</div>
@@ -145,25 +169,25 @@
 				<div class="list">
 					<ul>
 						<li>
-							<a class="link-web" href="https://www.github.com/julianzimmermann" target="_blank">GitHub</a><span class="link-print">: www.github.com/julianzimmermann</span>
+							<a class="link-web" href="https://www.github.com/julianzimmermann" onclick="trackOutboundLink('https://www.github.com/julianzimmermann'); return false;">GitHub</a><span class="link-print">: www.github.com/julianzimmermann</span>
 						</li>
 						<li>
-							<a class="link-web" href="https://www.facebook.com/jzimmermann" target="_blank">Facebook</a><span class="link-print">: www.facebook.com/jzimmermann</span>
+							<a class="link-web" href="https://www.facebook.com/jzimmermann" onclick="trackOutboundLink('https://www.facebook.com/jzimmermann'); return false;">Facebook</a><span class="link-print">: www.facebook.com/jzimmermann</span>
 						</li>
 						<li>
-							<a class="link-web" href="https://www.linkedin.com/in/julianzimmermann" target="_blank">LinkedIn</a><span class="link-print">: https://www.linkedin.com/in/julianzimmermann</span>
+							<a class="link-web" href="https://www.linkedin.com/in/julianzimmermann" onclick="trackOutboundLink('https://www.linkedin.com/in/julianzimmermann'); return false;">LinkedIn</a><span class="link-print">: https://www.linkedin.com/in/julianzimmermann</span>
 						</li>
 						<li>
-							<a class="link-web" href="https://www.twitter.com/yeahbert" target="_blank">Twitter</a><span class="link-print">: www.twitter.com/yeahbert</span>
+							<a class="link-web" href="https://www.twitter.com/yeahbert" onclick="trackOutboundLink('https://www.twitter.com/yeahbert'); return false;">Twitter</a><span class="link-print">: www.twitter.com/yeahbert</span>
 						</li>
 						<li>
-							<a class="link-web" href="https://www.goodreads.com/user/show/7305590-yeahbert" target="_blank">Goodreads</a><span class="link-print">: www.goodreads.com/user/show/7305590-yeahbert</span>
+							<a class="link-web" href="https://www.goodreads.com/user/show/7305590-yeahbert" onclick="trackOutboundLink('https://www.goodreads.com/user/show/7305590-yeahbert'); return false;">Goodreads</a><span class="link-print">: www.goodreads.com/user/show/7305590-yeahbert</span>
 						</li>
 						<li>
-							<a class="link-web" href="https://www.steamcommunity.com/id/yeahbert" target="_blank">Steam</a><span class="link-print">: www.steamcommunity.com/id/yeahbert</span>
+							<a class="link-web" href="https://www.steamcommunity.com/id/yeahbert" onclick="trackOutboundLink('https://www.steamcommunity.com/id/yeahbert'); return false;">Steam</a><span class="link-print">: www.steamcommunity.com/id/yeahbert</span>
 						</li>
 						<li>
-							<a class="link-web" href="mailto:julianzimmermann@gmail.com" target="_blank">Email/Hangouts</a><span class="link-print">: julianzimmermann@gmail.com</span>
+							<a class="link-web" href="mailto:julianzimmermann@gmail.com">Email/Hangouts</a><span class="link-print">: julianzimmermann@gmail.com</span>
 						</li>
 					</ul>
 				</div>
