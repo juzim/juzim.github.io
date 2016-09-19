@@ -88,18 +88,15 @@
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 		  ga('create', 'UA-82323377-1', 'auto');
 		  ga('send', 'pageview');
 
-			<script>
-
-		var trackOutboundLink = function(url) {
-		   ga('send', 'event', 'outbound', 'click', url, {
-		     'transport': 'beacon',
-		     'hitCallback': function(){document.location = url;}
-		   });
-		}
+			var trackOutboundLink = function(url) {
+			   ga('send', 'event', 'outbound', 'click', url, {
+			     'transport': 'beacon',
+			     'hitCallback': function(){document.location = url;}
+			   });
+			 }
 		</script>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 	</head>
@@ -171,7 +168,7 @@
 				<div class="list">
 					<ul>
 						<li>
-							<a class="link-web" href="https://www.github.com/julianzimmermann" onclick="trackOutboundLink('https://www.github.com/julianzimmermann'); return false;">GitHub</a><span class="link-print">: www.github.com/julianzimmermann</span>
+							<a class="link-web" href="https://www.github.com/juzim" onclick="trackOutboundLink('https://www.github.com/juzim'); return false;">GitHub</a><span class="link-print">: www.github.com/julianzimmermann</span>
 						</li>
 						<li>
 							<a class="link-web" href="https://www.facebook.com/jzimmermann" onclick="trackOutboundLink('https://www.facebook.com/jzimmermann'); return false;">Facebook</a><span class="link-print">: www.facebook.com/jzimmermann</span>
