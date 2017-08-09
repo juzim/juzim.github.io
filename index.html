@@ -18,7 +18,7 @@
 				margin-bottom: 10px;
 			}
 			h2,li {
-				font-size: 17px;
+				font-size: 1.2em;
 				line-height: 1.6;
 				margin: 0;
 			}
@@ -53,6 +53,16 @@
 				display: none;
 			}
 			@media print {
+				body, h1, h2, li {
+					line-height: 1.6;
+					font-size: 12px;
+				}
+				h1, h4 {
+					display: inline-block;
+					margin: 0;
+					padding: 0;
+					font-size: 1.5em;
+				}
 				.link-print {
 					display: initial;
 				}
@@ -67,21 +77,6 @@
 				body {
 					margin: 10px auto;
 					max-width: 100%;
-				}
-				.list {
-					overflow: hidden;
-					margin: 1em;
-				}
-				ul {
-					padding: 0;
-					margin-left: -10px;
-				}
-				li {
-					display: inline;
-					white-space: nowrap;
-				}
-				li:before {
-					content: ' | ';
 				}
 			} -->
 		</style>
