@@ -562,8 +562,8 @@
 			max-width: 100%;
 		}
 	} -->
-	ul#cyclelist {width:200px;border:solid;position:relative;overflow:hidden;height:200px}
-	ul#cyclelist li {font-size:1.4em;padding:20px;opacity:0;position:absolute}
+	ul#cyclelist {overflow:hidden;height:200px}
+	ul#cyclelist li {opacity:0;position:absolute}
 </style>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"> </script>
@@ -640,7 +640,7 @@
 				</div>
 				<h3>I'm currenlty obsessing about</h3>
 				<div class="list">
-					<ul id="cyclelist">
+					<ul>
 						<li>home automation</li>
 					 	<li>3d-printing</li>
 						<li>nixOS</li>
@@ -667,24 +667,24 @@
 		</div>
 	</div>
 <script>
-	$(document).ready(function() {
+// 	$(document).ready(function() {
 
-	 var j = 0;
-	 var delay = 2000; //millisecond delay between cycles
-	 function cycleThru(){
-	         var jmax = $("ul#cyclelist li").length -1;
-	         $("ul#cyclelist li:eq(" + j + ")")
-	                 .animate({"opacity" : "1"} ,400)
-	                 .animate({"opacity" : "1"}, delay)
-	                 .animate({"opacity" : "0"}, 400, function(){
-	                         (j == jmax) ? j=0 : j++;
-	                         cycleThru();
-	                 });
-	         };
+// 	 var j = 0;
+// 	 var delay = 2000; //millisecond delay between cycles
+// 	 function cycleThru(){
+// 	         var jmax = $("ul#cyclelist li").length -1;
+// 	         $("ul#cyclelist li:eq(" + j + ")")
+// 	                 .animate({"opacity" : "1"} ,400)
+// 	                 .animate({"opacity" : "1"}, delay)
+// 	                 .animate({"opacity" : "0"}, 400, function(){
+// 	                         (j == jmax) ? j=0 : j++;
+// 	                         cycleThru();
+// 	                 });
+// 	         };
 
-	 cycleThru();
+// 	 cycleThru();
 
- });
+//  });
 </script>
 </body>
 </html>
