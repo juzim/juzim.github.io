@@ -567,26 +567,7 @@
 	ul#cyclelist li {font-size:1.4em;padding:20px;opacity:0;position:absolute}
 </style>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
-<script>
-	$(document).ready(function() {
-
-	 var j = 0;
-	 var delay = 2000; //millisecond delay between cycles
-	 function cycleThru(){
-	         var jmax = $("ul#cyclelist li").length -1;
-	         $("ul#cyclelist li:eq(" + j + ")")
-	                 .animate({"opacity" : "1"} ,400)
-	                 .animate({"opacity" : "1"}, delay)
-	                 .animate({"opacity" : "0"}, 400, function(){
-	                         (j == jmax) ? j=0 : j++;
-	                         cycleThru();
-	                 });
-	         };
-
-	 cycleThru();
-
- });
-</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.js"> </script>
 </head>
 <body>
 	<div class="body-print">
@@ -673,25 +654,13 @@
 				<div class="list">
 					<ul>
 						<li>
-							<a class="link-web" href="https://www.github.com/juzim" onclick="trackOutboundLink('https://www.github.com/juzim'); return false;">GitHub</a><span class="link-print">: www.github.com/julianzimmermann</span>
+							<a class="link-web" href="https://www.github.com/juzim">GitHub</a><span class="link-print">: www.github.com/julianzimmermann</span>
 						</li>
 						<li>
-							<a class="link-web" href="https://www.facebook.com/jzimmermann" onclick="trackOutboundLink('https://www.facebook.com/jzimmermann'); return false;">Facebook</a><span class="link-print">: www.facebook.com/jzimmermann</span>
+							<a class="link-web" href="https://www.linkedin.com/in/julianzimmermann">LinkedIn</a><span class="link-print">: https://www.linkedin.com/in/julianzimmermann</span>
 						</li>
 						<li>
-							<a class="link-web" href="https://www.linkedin.com/in/julianzimmermann" onclick="trackOutboundLink('https://www.linkedin.com/in/julianzimmermann'); return false;">LinkedIn</a><span class="link-print">: https://www.linkedin.com/in/julianzimmermann</span>
-						</li>
-						<li>
-							<a class="link-web" href="https://www.twitter.com/yeahbert" onclick="trackOutboundLink('https://www.twitter.com/yeahbert'); return false;">Twitter</a><span class="link-print">: www.twitter.com/yeahbert</span>
-						</li>
-						<li>
-							<a class="link-web" href="https://www.goodreads.com/user/show/7305590-yeahbert" onclick="trackOutboundLink('https://www.goodreads.com/user/show/7305590-yeahbert'); return false;">Goodreads</a><span class="link-print">: www.goodreads.com/user/show/7305590-yeahbert</span>
-						</li>
-						<li>
-							<a class="link-web" href="https://www.steamcommunity.com/id/yeahbert" onclick="trackOutboundLink('https://www.steamcommunity.com/id/yeahbert'); return false;">Steam</a><span class="link-print">: www.steamcommunity.com/id/yeahbert</span>
-						</li>
-						<li>
-							<a class="link-web" href="mailto:julianzimmermann@gmail.com">Email/Hangouts</a><span class="link-print">: julianzimmermann@gmail.com</span>
+							<a class="link-web" href="mailto:julianzimmermann@gmail.com">Email</a><span class="link-print">: julianzimmermann@gmail.com</span>
 						</li>
 					</ul>
 				</div>
